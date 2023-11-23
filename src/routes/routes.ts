@@ -12,6 +12,4 @@ router.use('/auth', authRoutes);
 router.use('/option', auth.verifyToken, optionRoutes);
 router.use('/context', auth.verifyToken, contextRoutes);
 
-router.use
-
 export default router
