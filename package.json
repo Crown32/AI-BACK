@@ -2,9 +2,12 @@
   "name": "ia-back",
   "version": "1.0.0",
   "description": "Backend for an ai powered tool",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.ts",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,28 @@
   "bugs": {
     "url": "https://github.com/Crown32/AI-BACK/issues"
   },
-  "homepage": "https://github.com/Crown32/AI-BACK#readme"
+  "homepage": "https://github.com/Crown32/AI-BACK#readme",
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/express": "^4.17.15",
+    "@types/mongodb": "^4.0.7",
+    "@types/morgan": "^1.9.3",
+    "axios": "^1.2.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cors": "^2.8.13",
+    "@types/jsonwebtoken": "^9.0.1",
+    "rimraf": "^3.0.2"
+  }
 }

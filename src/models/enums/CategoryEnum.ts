@@ -1,0 +1,5 @@
+export enum CategoryEnum {
+  ESPECIALIDADE = 'ESPECIALIDADE',
+  ESTILO_ESCRITA = 'ESTILO_ESCRITA',
+  PUBLICO = 'PUBLICO'
+}
