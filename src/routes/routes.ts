@@ -3,14 +3,14 @@ import { AuthMiddleware } from '../middlewares/auth';
 
 import { authRoutes } from './authRoutes';
 import { optionRoutes } from './optionRoutes';
-import { promptRoutes } from './promptRoutes';
+import { contextRoutes } from './contextRoutes';
 
 const router = express.Router();
 const auth = new AuthMiddleware();
 
 router.use('/auth', authRoutes);
 router.use('/option', auth.verifyToken, optionRoutes);
-router.use('/prompt', auth.verifyToken, promptRoutes);
+router.use('/context', auth.verifyToken, contextRoutes);
 
 router.use
 
