@@ -1,0 +1,19 @@
+{
+  "name": "ia-back",
+  "version": "1.0.0",
+  "description": "Backend for an ai powered tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crown32/AI-BACK.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Crown32/AI-BACK/issues"
+  },
+  "homepage": "https://github.com/Crown32/AI-BACK#readme"
+}
